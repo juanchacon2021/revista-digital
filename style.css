@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: none;
+    background: #116D6E;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 146px;
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 0px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.logo {
+    background-color: #116D6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.logo img {
+    width: 12em;
+    height: 8em;
+    object-fit: cover;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a::before {
+    content:  '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    color: #fff;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    color: #fff;
+}
+
+body {
+    background-color: #f0e6d7;
+}
+
+/*      TITULO      */
+
+.titulo {
+    padding: 3%;
+}
+
+.titulo h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    color: #000000;
+    font-size: 3em;
+}
+
+
+
+/*      CARRUSEL        */
+
+.noticias {
+    width: 100%;
+    padding: 2%;
+}
+
+.noticias h1 {
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #116c6e1f;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider ul {
+    display: flex;
+    list-style: none;
+    width: 400%;
+    animation: slide 10s infinite linear;
+  }
+  
+  .slider li {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .slider ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway';
+  }
+
+  .slider ul li a:hover {
+    color: #019297;
+    transition: .5s;
+  }
+
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+  
+    100% {
+      margin-left: -100%;
+    }
+  }
+
+
+
+
+
+/*      CUERPO      */
+
+.leyes {
+    display: flex;
+    padding: 2%;
+}
+
+
+.informacion {
+    background-color: #F8FAE5;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.cuerpo {
+    width: 70%;
+}
+
+.info-caja h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    padding: 5% 0% 0% 5%;
+}
+
+.info-caja a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-caja a:hover {
+    color: #116D6E;
+    transition: .5s;
+}
+
+.info-caja img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+    transition: .5s;
+}
+
+.info-caja p {
+    font-family: 'Raleway';
+    padding: 2%;
+    padding-left: 5%;
+    width: 95%;
+    text-align: justify;
+}
+
+.info-caja img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    padding-left: 5%;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer h4 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    padding: 2% 0% 2% 5%;
+}
+
+.footer h6 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    padding: 2% 0% 2% 1%;
+}
+
+.alumnos {
+    background-color: #F8FAE5;
+    padding: 2%;
+    margin-left: 2%;
+    height: 20%;
+    width: 30%;
+}
+
+.alumnos h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+}
+
+.alumnos h3 {
+    font-family: 'Raleway';
+    font-weight: 900;
+}
+
+.alumnos p {
+    font-family: 'Raleway';
+    padding: 2%;
+}
+
+.alum {
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+/*      RESPOSIVE       */
+
+@media (max-width: 1098px){
+    .logo {
+        background-color: #116D6E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2%;
+    }
+    
+    .logo a img {
+        width: 17em;
+        height: 14em;
+        object-fit: cover;
+    }
+    
+    .logo img:hover {
+        transform: scale(0);
+        transition: .3s;
+    }
+
+    .navbar{
+        background-color: #116D6E;
+        height: 11%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        background: #116D6E;
+        top: 21em;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .logo img{
+        margin-top: 5%;
+        width: 3em;
+        height: auto;
+    }
+
+    /*      TITULO      */
+
+.titulo {
+    padding: 3%;
+}
+
+.titulo h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    color: #000000;
+    font-size: 3em;
+}
+
+
+
+/*      CARRUSEL        */
+
+.noticias {
+    width: 100%;
+    padding: 2%;
+}
+
+.noticias h1 {
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #116c6e1f;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider ul {
+    display: flex;
+    list-style: none;
+    width: 400%;
+    animation: slide 10s infinite linear;
+  }
+  
+  .slider li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .slider ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway';
+    font-size: 2em;
+  }
+
+  .slider ul li a:hover {
+    color: #019297;
+    transition: .5s;
+  }
+
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+  
+    100% {
+      margin-left: -100%;
+    }
+  }
+
+
+
+
+
+    /*      CUERPO      */
+
+    .leyes {
+        display: block;
+        padding: 2%;
+    }
+
+
+    .informacion {
+        background-color: #F8FAE5;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .cuerpo {
+        width: 100%;
+    }
+
+    .info-caja h1 {
+        font-family: 'Raleway';
+        font-weight: 900;
+        padding: 5% 0% 0% 5%;
+    }
+
+    .info-caja a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .info-caja a:hover {
+        color: #116D6E;
+        transition: .5s;
+    }
+
+    .info-caja img:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+        transition: .5s;
+    }
+
+    .info-caja p {
+        font-family: 'Raleway';
+        padding: 2%;
+        padding-left: 5%;
+        width: 95%;
+        text-align: justify;
+    }
+
+    .info-caja img {
+        width: 95%;
+        height: 300px;
+        object-fit: cover;
+        padding-left: 5%;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer h4 {
+        font-family: 'Raleway';
+        font-weight: 900;
+        padding: 2% 0% 2% 5%;
+        font-size: 2em;
+    }
+
+    .footer h6 {
+        font-family: 'Raleway';
+        font-weight: 900;
+        padding: 2% 0% 2% 1%;
+    }
+
+    .alumnos {
+        background-color: #F8FAE5;
+        padding: 2%;
+        margin-left: 0%;
+        height: 20%;
+        width: 100%;
+    }
+
+    .alumnos h1 {
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: 3em;
+    }
+
+    .alumnos h3 {
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: 2em;
+    }
+
+    .alumnos p {
+        font-family: 'Raleway';
+        padding: 2% 0%;
+        font-size: 2em;
+    }
+
+    .alum {
+        padding: 20px 0;
+    }
+}
